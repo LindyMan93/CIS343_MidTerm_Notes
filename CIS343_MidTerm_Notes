@@ -1,0 +1,76 @@
+/*CIS343 Mid Term Notes
+* Nathan Lindenbaum
+* 2/22/2017
+*/
+
+/*
+*
+* The goal of any language is to communicate ideas to a computer.
+* Some languages are better for certain tasks.
+* 
+* C was created for portable high level coding.
+* how do we grade languages:
+* 		Readability
+*			C is much easier to read than Assembly Language.
+*		Writeability
+*			
+* 		Reliability
+*			Orthogonality - small number of primitives
+*			Example: * in java does one thing, * in C does many
+*			things. Means that primitives can do a small number of
+*			tasks. If only one.
+*
+* Syntax:
+*
+*	How to write a language:
+*		- ( , ) , While, ;, : , etc.
+*
+* Symmantics:
+*	
+*	Rules that a based on the lexeme of the languages.
+*	Lexeme = smallest functional thing in a language.
+*		Example: if, this, while, new, a, etc.
+*	Tokens are groups of lexemes. 
+*		Example: (=, <, >, =<,=>, !=) Are all "Operators"
+*				 [a-z], [A-Z], [A-Z]+
+*
+* Compilers:
+*	
+*	#include <stdio.h>
+*	
+*	Lexers:
+*		Breaks up code into tokens. Puts these tokens into categories to better
+*		used by the parse tree.
+*	Parsers:
+*		Uses the parse tree to determine if it is a valid sentence.
+*		If it is a valid sentence, it can convert this into another form.
+*
+*		Go over terminal and non-terminal again.
+*
+*	Bootstrapping:
+*		A language that has a compiler that is writen in its own language.
+*		Cannot start that way. But after first run, it can create a compiler in
+*		its own language.
+*
+* Left Most Derivations:
+*	
+*	(S -> A B | A S B; A:a B:b)  input:(S -> aabb)
+*	S ->
+*	A S B
+*	a S B 
+*	aABB
+*	aaBB
+*	aabB
+*	aabb
+*	
+* C Notes on Pointers:
+*	int* a; //this is an address
+*	int b; // not sure
+* 	a =&b // a = the address of b
+*	
+* 	b = 42; // address is 3
+*	a = ??? // a would equal 3
+*	*a = 19 // this would change the value of address a contains, meaning b changes
+*			// from 42 to 19.
+*
+*/
